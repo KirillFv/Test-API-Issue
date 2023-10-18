@@ -8,7 +8,7 @@
     
 <p>2.Кнопка включения <code>Generate new token</code> </p>
 <p>3.Возьмите имя ключа, назначьте разрешения</p>
-<p>4.Нажмите кнопку <code>Сгенерировать токен</code></p>
+<p>4.Нажмите кнопку <code>Generate token</code></p>
 
 
 
@@ -82,13 +82,13 @@ pm.collectionVariables.set(key, value);
 
 #### GET проверка блокировки issue
  PATH: - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
- Use a variables from previous step - script
+ <p>Use a variables from previous step - script</p>
  Authorization: - <code>inherit auth from parent</code>
 
 #### DELETE (close) issue
  PATH - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
- Authorization: - <code>inherit auth from parent</code>
- body:
+ <p>Authorization: - <code>inherit auth from parent</code> </p>
+ <p>body:</p>
 
 ```
 {
