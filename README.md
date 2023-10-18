@@ -81,14 +81,14 @@ pm.collectionVariables.set(key, value);
 ```
 
 #### GET проверка блокировки issue
-PATH: - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
-Use a variables from previous step - script
-Authorization: - <code>inherit auth from parent</code>
+ PATH: - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
+ Use a variables from previous step - script
+ Authorization: - <code>inherit auth from parent</code>
 
 #### DELETE (close) issue
-PATH - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
-Authorization: - <code>inherit auth from parent</code>
-body:
+ PATH - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
+ Authorization: - <code>inherit auth from parent</code>
+ body:
 
 ```
 {
