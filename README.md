@@ -12,7 +12,7 @@
 
 ## Шаг 2 - Postman
 <p>1.Создайте новую коллекцию Postman</p>
-<p>2.```Выберите Authorization  -> Type -> Bearer Token</p>```
+<p>2.Выберите Authorization  -> Type -> Bearer Token</p>
 <p>3.Введите свой токен с Github и сохраните изменения</p>
 
 
