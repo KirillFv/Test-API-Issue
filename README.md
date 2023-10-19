@@ -81,14 +81,19 @@ pm.collectionVariables.set(key, value);
 ```
 
 #### GET проверка блокировки issue
- PATH: - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
- <p>Use a variables from previous step - script</p>
+ - PATH: - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
+ - <p>Use a variables from previous step - script</p>
  Authorization: - <code>inherit auth from parent</code>
 
-#### DELETE (close) issue
- PATH - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
- <p>Authorization: - <code>inherit auth from parent</code> </p>
- <p>body:</p>
+ #### DELETE разблокировка issue
+ - DELETE - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
+ - <p>Authorization: - <code>inherit auth from parent</code> </p>
+
+#### PATCH (close) issue
+ - PATH - <code>https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}</code>
+ - <p>Authorization: - <code>inherit auth from parent</code> </p>
+ - <p>body:</p>
+
 
 ```
 {
@@ -97,4 +102,9 @@ pm.collectionVariables.set(key, value);
 ```
 
 
----
+ !!!                       с Согласно документации Github, работа с Issue не предполагает возможность удаления только блокировку, разблокировку и закрытие. Поэтому задание было сделано с учетом особенности Github. [Удаление-закрытие было сделано по информации с внешних источников](https://www.mo4tech.com/github-api-v3.html)  
+ 
+
+
+
+___
